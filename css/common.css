@@ -1,0 +1,91 @@
+﻿/* 
+    Author      : Trueland Development Department 
+*/
+	@charset "utf-8";
+	
+/*
+	--------------------------
+	prompt ????????????(IE6\7\8\) 
+	--------------------------
+*/
+
+	.prompt 						{
+										position: fixed;
+										width: 100%;
+										height: 100%;
+										background: url(img/ie_sosad.png) no-repeat center 35% #fff;
+										left: 0;
+										bottom: 0;
+										display: none;
+										z-index: 999;
+										filter:alpha(opacity=80);
+										opacity: 80;
+
+									}
+									
+									
+	.prompt span  					{
+										position: absolute;
+										font-size: 14px;
+										font-family: "??????";
+										top: 55%;
+										left: 50%;
+										margin-left: -152px;
+										width: 304px;
+										display: block;
+										line-height: 24px;
+										color: #666;
+									}
+									
+	.prompt span a  				{
+										text-decoration: underline;
+									}
+	
+	.prompt-close      			 	{
+					
+										width: 30px;
+										height: 30px;
+										position: absolute;
+										right: 30px;
+										top: 30px;
+										background: url(img/closed.png) no-repeat center center;
+										cursor: pointer;
+									}
+/*
+	--------------------------
+	??????????????????
+	--------------------------
+*/
+	.pageloading 					{
+										position: fixed;
+										width: 100%;
+										height: 100%;
+										left: 0;
+										top: 0;
+										background: -webkit-radial-gradient(center center, circle cover, rgba(0,0,0,0), rgba(0,0,0,1));
+									    background: -moz-radial-gradient(center center, circle cover, rgba(0,0,0,0), rgba(0,0,0,1));
+									    background: -ms-radial-gradient(center center, circle cover, rgba(0,0,0,0), rgba(0,0,0,1));
+									    background: -o-radial-gradient(center center, circle cover, rgba(0,0,0,0), rgba(0,0,0,1));
+									    background: radial-gradient(center center, circle cover, rgba(0,0,0,0), rgba(0,0,0,1));
+										z-index: 999999;
+									}
+	.pageloading:after 				{
+										content: ".. Please wait ..";
+										position: absolute;
+										top: 53%;
+										text-align: center;
+										width: 100%;
+										font-size: 14px;
+										color: #333;
+										text-shadow: 1px 1px 1px #fff;
+										font-family: arial;
+									}
+	.pageloading img 				{
+										width: 50px;
+										position: absolute;
+										top: 0;
+										right: 0;
+										bottom: 0;
+										left: 0;
+										margin: auto;
+									}
